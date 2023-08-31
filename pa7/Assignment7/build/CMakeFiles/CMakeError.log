@@ -1,0 +1,82 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_89576/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89576.dir/build.make CMakeFiles/cmTC_89576.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_89576.dir/build.make:58: CMakeFiles/cmTC_89576.dir/progress.make: No such file or directory
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_89576.dir/progress.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_89576/fast' failed
+make: *** [cmTC_89576/fast] Error 2
+
+
+Detecting C [-std=c90] compiler features failed to compile with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_81670/fast"
+/usr/bin/make -f CMakeFiles/cmTC_81670.dir/build.make CMakeFiles/cmTC_81670.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_81670.dir/build.make:55: CMakeFiles/cmTC_81670.dir/depend.make: No such file or directory
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_81670.dir/depend.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_81670/fast' failed
+make: *** [cmTC_81670/fast] Error 2
+
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d8626/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d8626.dir/build.make CMakeFiles/cmTC_d8626.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8626.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d8626.dir/CheckSymbolExists.c.o   -c /media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d8626
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8626.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_d8626.dir/CheckSymbolExists.c.o  -o cmTC_d8626 
+CMakeFiles/cmTC_d8626.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d8626.dir/build.make:97: recipe for target 'cmTC_d8626' failed
+make[1]: *** [cmTC_d8626] Error 1
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d8626/fast' failed
+make: *** [cmTC_d8626/fast] Error 2
+
+File /media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0d62c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0d62c.dir/build.make CMakeFiles/cmTC_0d62c.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d62c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0d62c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0d62c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d62c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0d62c.dir/CheckFunctionExists.c.o  -o cmTC_0d62c -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0d62c.dir/build.make:97: recipe for target 'cmTC_0d62c' failed
+make[1]: *** [cmTC_0d62c] Error 1
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa7/Assignment7/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0d62c/fast' failed
+make: *** [cmTC_0d62c/fast] Error 2
+
+

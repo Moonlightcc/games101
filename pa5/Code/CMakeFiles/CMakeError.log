@@ -1,0 +1,16 @@
+Detecting CXX [-std=c++98] compiler features failed to compile with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa5/Code/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_39c4e/fast"
+make: Warning: File 'Makefile' has modification time 1.6 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_39c4e.dir/build.make CMakeFiles/cmTC_39c4e.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa5/Code/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_39c4e.dir/build.make:58: CMakeFiles/cmTC_39c4e.dir/progress.make: No such file or directory
+make[1]: Warning: File 'CMakeFiles/cmTC_39c4e.dir/flags.make' has modification time 1.6 s in the future
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_39c4e.dir/progress.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa5/Code/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_39c4e/fast' failed
+make: *** [cmTC_39c4e/fast] Error 2
+
+
+

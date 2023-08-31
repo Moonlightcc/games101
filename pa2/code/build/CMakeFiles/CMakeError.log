@@ -1,0 +1,47 @@
+Detecting C [-std=c11] compiler features failed to compile with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eb2f4/fast"
+make: Warning: File 'Makefile' has modification time 0.37 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_eb2f4.dir/build.make CMakeFiles/cmTC_eb2f4.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_eb2f4.dir/build.make:58: CMakeFiles/cmTC_eb2f4.dir/progress.make: No such file or directory
+make[1]: Warning: File 'CMakeFiles/cmTC_eb2f4.dir/flags.make' has modification time 0.36 s in the future
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_eb2f4.dir/progress.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_eb2f4/fast' failed
+make: *** [cmTC_eb2f4/fast] Error 2
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_96f5b/fast"
+make: Warning: File 'Makefile' has modification time 0.39 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_96f5b.dir/build.make CMakeFiles/cmTC_96f5b.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_96f5b.dir/build.make:58: CMakeFiles/cmTC_96f5b.dir/progress.make: No such file or directory
+make[1]: Warning: File 'CMakeFiles/cmTC_96f5b.dir/flags.make' has modification time 0.38 s in the future
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_96f5b.dir/progress.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_96f5b/fast' failed
+make: *** [cmTC_96f5b/fast] Error 2
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_61384/fast"
+make: Warning: File 'Makefile' has modification time 0.32 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_61384.dir/build.make CMakeFiles/cmTC_61384.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_61384.dir/build.make:55: CMakeFiles/cmTC_61384.dir/depend.make: No such file or directory
+make[1]: Warning: File 'CMakeFiles/cmTC_61384.dir/flags.make' has modification time 0.32 s in the future
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_61384.dir/depend.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa2/code/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_61384/fast' failed
+make: *** [cmTC_61384/fast] Error 2
+
+
+

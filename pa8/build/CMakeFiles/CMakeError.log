@@ -1,0 +1,152 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c4c5d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4c5d.dir/build.make CMakeFiles/cmTC_c4c5d.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_c4c5d.dir/build.make:55: CMakeFiles/cmTC_c4c5d.dir/depend.make: No such file or directory
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_c4c5d.dir/depend.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c4c5d/fast' failed
+make: *** [cmTC_c4c5d/fast] Error 2
+
+
+
+Detecting C [-std=c90] compiler features failed to compile with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56bb1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56bb1.dir/build.make CMakeFiles/cmTC_56bb1.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_56bb1.dir/build.make:58: CMakeFiles/cmTC_56bb1.dir/progress.make: No such file or directory
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_56bb1.dir/progress.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_56bb1/fast' failed
+make: *** [cmTC_56bb1/fast] Error 2
+
+
+
+Detecting CXX [-std=c++98] compiler features failed to compile with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bea7a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bea7a.dir/build.make CMakeFiles/cmTC_bea7a.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_bea7a.dir/build.make:55: CMakeFiles/cmTC_bea7a.dir/depend.make: No such file or directory
+CMakeFiles/cmTC_bea7a.dir/build.make:58: CMakeFiles/cmTC_bea7a.dir/progress.make: No such file or directory
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_bea7a.dir/progress.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bea7a/fast' failed
+make: *** [cmTC_bea7a/fast] Error 2
+
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e2c75/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e2c75.dir/build.make CMakeFiles/cmTC_e2c75.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2c75.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e2c75.dir/CheckSymbolExists.c.o   -c /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e2c75
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2c75.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e2c75.dir/CheckSymbolExists.c.o  -o cmTC_e2c75 
+CMakeFiles/cmTC_e2c75.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e2c75.dir/build.make:97: recipe for target 'cmTC_e2c75' failed
+make[1]: *** [cmTC_e2c75] Error 1
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e2c75/fast' failed
+make: *** [cmTC_e2c75/fast] Error 2
+
+File /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20c8a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20c8a.dir/build.make CMakeFiles/cmTC_20c8a.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20c8a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_20c8a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_20c8a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20c8a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_20c8a.dir/CheckFunctionExists.c.o  -o cmTC_20c8a -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_20c8a.dir/build.make:97: recipe for target 'cmTC_20c8a' failed
+make[1]: *** [cmTC_20c8a] Error 1
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_20c8a/fast' failed
+make: *** [cmTC_20c8a/fast] Error 2
+
+
+Determining if the function shmat exists failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c4326/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4326.dir/build.make CMakeFiles/cmTC_c4326.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_c4326.dir/build.make:58: CMakeFiles/cmTC_c4326.dir/progress.make: No such file or directory
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_c4326.dir/progress.make'.  Stop.
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c4326/fast' failed
+make: *** [cmTC_c4326/fast] Error 2
+
+
+Determining if the function shmat exists in the ipc failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3766b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3766b.dir/build.make CMakeFiles/cmTC_3766b.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3766b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_3766b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3766b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3766b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat    -rdynamic CMakeFiles/cmTC_3766b.dir/CheckFunctionExists.c.o  -o cmTC_3766b -lipc 
+/usr/bin/ld: cannot find -lipc
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3766b.dir/build.make:97: recipe for target 'cmTC_3766b' failed
+make[1]: *** [cmTC_3766b] Error 1
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3766b/fast' failed
+make: *** [cmTC_3766b/fast] Error 2
+
+
+Determining if the function glXGetProcAddressEXT exists failed with the following output:
+Change Dir: /media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_78448/fast"
+/usr/bin/make -f CMakeFiles/cmTC_78448.dir/build.make CMakeFiles/cmTC_78448.dir/build
+make[1]: Entering directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78448.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressEXT   -o CMakeFiles/cmTC_78448.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_78448
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78448.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=glXGetProcAddressEXT    -rdynamic CMakeFiles/cmTC_78448.dir/CheckFunctionExists.c.o  -o cmTC_78448 -Wl,-rpath,/usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/libGL.so 
+CMakeFiles/cmTC_78448.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `glXGetProcAddressEXT'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_78448.dir/build.make:98: recipe for target 'cmTC_78448' failed
+make[1]: *** [cmTC_78448] Error 1
+make[1]: Leaving directory '/media/sf_gamesFiles/games101/pa8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_78448/fast' failed
+make: *** [cmTC_78448/fast] Error 2
+
+
