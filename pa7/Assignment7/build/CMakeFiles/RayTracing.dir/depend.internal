@@ -23,6 +23,7 @@ CMakeFiles/RayTracing.dir/Renderer.cpp.o
  /media/sf_gamesFiles/games101/pa7/Assignment7/Renderer.cpp
  /media/sf_gamesFiles/games101/pa7/Assignment7/Renderer.hpp
  /media/sf_gamesFiles/games101/pa7/Assignment7/Scene.hpp
+ /media/sf_gamesFiles/games101/pa7/Assignment7/ThreadPool.hpp
  /media/sf_gamesFiles/games101/pa7/Assignment7/Vector.hpp
  /media/sf_gamesFiles/games101/pa7/Assignment7/global.hpp
 CMakeFiles/RayTracing.dir/Scene.cpp.o

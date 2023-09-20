@@ -58,14 +58,9 @@ bool Scene::trace(
 }
 
 // Implementation of Path Tracing
-Vector3f Scene::castRay(const Ray &ray, int depth) const
+Vector3f Scene::castRay(const Ray &ray, const Intersection &interp, int depth) const
 {
     // TO DO Implement Path Tracing Algorithm here
-    auto interp = intersect(ray);
-
-    if(!interp.happened)
-        return {};
-
     if(interp.m->hasEmission())
         return interp.m->getEmission();
     
@@ -103,7 +98,7 @@ Vector3f Scene::castRay(const Ray &ray, int depth) const
             if (nextp.happened && !nextp.m->hasEmission())
             {
                 auto brdf = mat->eval(wi, wo, normal);
-                L_indir = castRay(new_ray,depth) * brdf * std::max(.0f, dotProduct(wi, normal)) / pdf / RussianRoulette;
+                L_indir = castRay(new_ray,nextp,depth) * brdf * std::max(.0f, dotProduct(wi, normal)) / pdf / RussianRoulette;
             }
         }
     }

@@ -22,6 +22,7 @@ CMakeFiles/RayTracing.dir/Renderer.cpp.o: ../Ray.hpp
 CMakeFiles/RayTracing.dir/Renderer.cpp.o: ../Renderer.cpp
 CMakeFiles/RayTracing.dir/Renderer.cpp.o: ../Renderer.hpp
 CMakeFiles/RayTracing.dir/Renderer.cpp.o: ../Scene.hpp
+CMakeFiles/RayTracing.dir/Renderer.cpp.o: ../ThreadPool.hpp
 CMakeFiles/RayTracing.dir/Renderer.cpp.o: ../Vector.hpp
 CMakeFiles/RayTracing.dir/Renderer.cpp.o: ../global.hpp
 
